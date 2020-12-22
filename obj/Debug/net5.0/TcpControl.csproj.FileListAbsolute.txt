@@ -1,0 +1,16 @@
+C:\Users\shine\projects\TcpControl\bin\Debug\net5.0\TcpControl.exe
+C:\Users\shine\projects\TcpControl\bin\Debug\net5.0\TcpControl.deps.json
+C:\Users\shine\projects\TcpControl\bin\Debug\net5.0\TcpControl.runtimeconfig.json
+C:\Users\shine\projects\TcpControl\bin\Debug\net5.0\TcpControl.runtimeconfig.dev.json
+C:\Users\shine\projects\TcpControl\bin\Debug\net5.0\TcpControl.dll
+C:\Users\shine\projects\TcpControl\bin\Debug\net5.0\ref\TcpControl.dll
+C:\Users\shine\projects\TcpControl\bin\Debug\net5.0\TcpControl.pdb
+C:\Users\shine\projects\TcpControl\obj\Debug\net5.0\TcpControl.csprojAssemblyReference.cache
+C:\Users\shine\projects\TcpControl\obj\Debug\net5.0\TcpControl.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\shine\projects\TcpControl\obj\Debug\net5.0\TcpControl.AssemblyInfoInputs.cache
+C:\Users\shine\projects\TcpControl\obj\Debug\net5.0\TcpControl.AssemblyInfo.cs
+C:\Users\shine\projects\TcpControl\obj\Debug\net5.0\TcpControl.csproj.CoreCompileInputs.cache
+C:\Users\shine\projects\TcpControl\obj\Debug\net5.0\TcpControl.dll
+C:\Users\shine\projects\TcpControl\obj\Debug\net5.0\ref\TcpControl.dll
+C:\Users\shine\projects\TcpControl\obj\Debug\net5.0\TcpControl.pdb
+C:\Users\shine\projects\TcpControl\obj\Debug\net5.0\TcpControl.genruntimeconfig.cache

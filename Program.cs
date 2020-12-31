@@ -2,24 +2,51 @@
 using System.IO;
 using System.Net;
 using System.Net.Sockets;
+using System.Diagnostics;
+using System.Text;
 
 namespace TcpControl
 {
     class Program
     {
-        /// TCP Listener, Private
-        private static TcpListener _server = null;
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello LSAM!");
-            // TestProgram();
+            Console.WriteLine("LSAM Data Transciever Test Program!");
+            
+            if(args.Length < 2)
+            {
+                Console.WriteLine("Usage : {0} <Bind IP> <Port> ", Process.GetCurrentProcess().ProcessName);
+                return;
+            }
 
-            // Set the TcoListener on port 2020
-            Int32 port = 2020;
-            IPAddress localAddr = IPAddress.Parse("127.0.0.1");
+            string bindIp = args[0];
+            int bindPort = int.Parse(args[1]);
+            TcpListener server = null;
 
-            //TcpListener server = new TcpListener(port)
-            _server = new TcpListener(localAddr, port);
+            try
+            {
+                IPEndPoint localAddress = new IPEndPoint(IPAddress.Parse(bindIp), bindPort);
+
+                server = new TcpListener(localAddress);
+
+                server.Start();
+
+                Console.WriteLine($"[Server] {bindIp}:{bindPort} Server Start...");
+
+                while(true)
+                {
+                    TcpClient client = server.AcceptTcpClient();
+                    Console.WriteLine($"Client Connect Success: {((IPEndPoint)client.Client.RemoteEndPoint).ToString()}");
+
+                    NetworkStream stream = client.GetStream();
+
+                }
+            }
+            catch (System.Exception)
+            {
+                
+                throw;
+            }
 
         }  
 
